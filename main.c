@@ -3,9 +3,7 @@
 #include <windows.h>
 #include <locale.h>
 
-int main()
-{
-    // INICIAZAÇÃO DO SOFTWARE
+void welcome(){
     char nome[20];   // VARIAVEL DO NOME e VARIAVEL DE CONFIRMAÇÃO
     int aux;
     printf("**************BEM VINDO A LOCOBOTS 2021*****************");
@@ -15,10 +13,28 @@ int main()
     puts(nome);   //IMPRIMINDO O NOME
     printf("\n");
     puts(nome);    //IMPRIME NOME
-    printf("\nAgora inicializaremos uma serie de perguntas para podermos traçar a melhor area no qual o seu perfil se agregue");
-    //abre o formulario
+    printf("Agora inicializaremos uma serie de perguntas para podermos tracar a melhor area no qual o seu perfil se agregue");
+}
+
+void formulario(){
+
     printf("\nAgora, voce sera redirecionado para um formulario, no qual deve responde-lo com muita atencao:\n");
     system("pause");  //apenas para teste antes das proximas perguntas
     system("start chrome https://github.com/wolfMatheus"); //direciona para o formulario
+
+}
+
+void swot(){ //escrever funções da swot
+
+
+    //
+}
+
+int main()
+{
+    // INICIAZAÇÃO DO SOFTWARE
+    welcome();
+    //swot();
+    formulario();
     return 0;
 }
