@@ -4,7 +4,7 @@
 #include <locale.h>
 
 void welcome(){
-    char nome[20];   // VARIAVEL DO NOME e VARIAVEL DE CONFIRMA«√O
+    char nome[20];   // VARIAVEL DO NOME e VARIAVEL DE CONFIRMA√á√ÉO
     int aux;
     printf("**************BEM VINDO A LOCOBOTS 2021*****************");
     printf("\n\nE um prazer te-lo aqui, para nos conhecermos melhor, qual o seu nome?  ");
@@ -24,7 +24,7 @@ void formulario(){
 
 }
 
-void perguntas(){ //escrever funÁıes da swot
+void perguntas(){ //escrever fun√ß√µes da swot
     int aux=0, resultado=0;
    // printf("\n agora seram exibidas algumas perguntas, tente respondelas da forma mais clara possivel");
     system("pause");
@@ -117,7 +117,7 @@ void resposta(int resultado){
         printf("\n Caso se sinta a vontade, procure alguem da equipe para que possamos conversar, bater um papo sempre faz bem!");
     }
     if(resultado<11){
-        printf("\n AtÈ voce e legal! mas procure se dedicar mais as suas atividades");
+        printf("\n At√© voce e legal! mas procure se dedicar mais as suas atividades");
     }
     if(resultado>10){
         printf("\n Voce e 10! meu campeao");
@@ -125,11 +125,18 @@ void resposta(int resultado){
 
 }
 
+void encerramento(){
+    system("cls");
+    printf("\n O intuito desse projeto foi passar uma mensagem positiva a voce, mostrando que podemos superar dores e fraquezas, evitar ameacas e se preparar para as inevitaveis e sempre se apoiar naquilo que te fortalece. Junto com essa ideia trouxemos a matriz SWOT, onde trabalhamos com suas forcas, suas fraquezas, oportunidades e ameacas. Uma ferramenta que podemos usar nao somente em negocios, mas na sua vida pessoal. Esperamos que voce tenha apreciado a experiencia!\n")
+    system("pause")
+}
+
 int main()
 {
-    // INICIAZA«√O DO SOFTWARE
+    // INICIAZA√á√ÉO DO SOFTWARE
     welcome();
     perguntas();
     formulario();
+    encerramento();
     return 0;
 }
