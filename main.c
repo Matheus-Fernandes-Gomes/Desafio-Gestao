@@ -3,8 +3,12 @@
 #include <windows.h>
 #include <locale.h>
 
+void welcome(void);
+void formulario(void);
+void perguntas(void);
+void resposta(int);
 void welcome(){
-    char nome[20];   // VARIAVEL DO NOME e VARIAVEL DE CONFIRMAÇÃO
+    char nome[20];   // VARIAVEL DO NOME e VARIAVEL DE CONFIRMAÃ‡ÃƒO
     int aux;
     printf("**************BEM VINDO A LOCOBOTS 2021*****************");
     printf("\n\nE um prazer te-lo aqui, para nos conhecermos melhor, qual o seu nome?  ");
@@ -24,9 +28,9 @@ void formulario(){
 
 }
 
-void perguntas(){ //escrever funções da swot
+void perguntas(){ //escrever funÃ§Ãµes da swot
     int aux=0, resultado=0;
-   // printf("\n agora seram exibidas algumas perguntas, tente respondelas da forma mais clara possivel");
+    // printf("\n agora seram exibidas algumas perguntas, tente respondelas da forma mais clara possivel");
     system("pause");
     system("cls");
 
@@ -35,89 +39,76 @@ void perguntas(){ //escrever funções da swot
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
-        while((aux!=1)&&(aux!=2)&&(aux!=3)){
+    while((aux!=1)&&(aux!=2)&&(aux!=3)){
         printf("\nTente outra resposta: ");
         scanf("%d",&aux);
-        }
     }
-    else{resultado=resultado+aux;}
+    resultado=resultado+aux;
 
     printf("\nVoce tem conversado com as pessoas? digite:");
     printf("\n1 para nao");
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
-        while((aux!=1)&&(aux!=2)&&(aux!=3)){
+    while((aux!=1)&&(aux!=2)&&(aux!=3)){
         printf("\nTente outra resposta: ");
         scanf("%d",&aux);
-        }
     }
-    else{resultado=resultado+aux;}
+    resultado=resultado+aux;
 
     printf("\nVoce tem se dedicado aos estudos? digite:");
     printf("\n1 para nao");
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
-        while((aux!=1)&&(aux!=2)&&(aux!=3)){
+    while((aux!=1)&&(aux!=2)&&(aux!=3)){
         printf("\nTente outra resposta: ");
         scanf("%d",&aux);
-        }
     }
-    else{resultado=resultado+aux;}
+    resultado=resultado+aux;
 
     printf("\nVoce tem conversado com a sua familia? digite:");
     printf("\n1 para nao");
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
-        while((aux!=1)&&(aux!=2)&&(aux!=3)){
+    while((aux!=1)&&(aux!=2)&&(aux!=3)){
         printf("\nTente outra resposta: ");
         scanf("%d",&aux);
-        }
     }
-    else{resultado=resultado+aux;}
+    resultado=resultado+aux;
 
     printf("\nVoce tem se sentido motivado com a faculdade? digite:");
     printf("\n1 para nao");
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
-        while((aux!=1)&&(aux!=2)&&(aux!=3)){
+    while((aux!=1)&&(aux!=2)&&(aux!=3)){
         printf("\nTente outra resposta: ");
         scanf("%d",&aux);
-        }
     }
-    else{resultado=resultado+aux;}
+    resultado=resultado+aux;
 
     printf("\nVoce esta motivado com a Locobots? digite:");
     printf("\n1 para nao");
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
-        while((aux!=1)&&(aux!=2)&&(aux!=3)){
+    while((aux!=1)&&(aux!=2)&&(aux!=3)){
         printf("\nTente outra resposta: ");
         scanf("%d",&aux);
-        }
     }
-    else{resultado=resultado+aux;}
-
+    resultado=resultado+aux;
     resposta(resultado);
 
-    //
 }
 void resposta(int resultado){
+    //printf("%d",resultado);
     if(resultado<7){
         printf("\n Caso se sinta a vontade, procure alguem da equipe para que possamos conversar, bater um papo sempre faz bem!");
     }
-    if(resultado<11){
-        printf("\n Até voce e legal! mas procure se dedicar mais as suas atividades");
+    if(resultado<=10){
+        printf("\n Ate que voce e legal! mas procure se dedicar mais as suas atividades");
     }
     if(resultado>10){
         printf("\n Voce e 10! meu campeao");
@@ -127,7 +118,7 @@ void resposta(int resultado){
 
 int main()
 {
-    // INICIAZAÇÃO DO SOFTWARE
+    // INICIAZAÃ‡ÃƒO DO SOFTWARE
     welcome();
     perguntas();
     formulario();
