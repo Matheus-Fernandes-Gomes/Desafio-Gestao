@@ -4,7 +4,7 @@
 #include <locale.h>
 
 void welcome(){
-    char nome[20];   // VARIAVEL DO NOME e VARIAVEL DE CONFIRMAÇÃO
+    char nome[20];   // VARIAVEL DO NOME e VARIAVEL DE CONFIRMAÃ‡ÃƒO
     int aux;
     printf("**************BEM VINDO A LOCOBOTS 2021*****************");
     printf("\n\nE um prazer te-lo aqui, para nos conhecermos melhor, qual o seu nome?  ");
@@ -24,7 +24,7 @@ void formulario(){
 
 }
 
-void perguntas(){ //escrever funções da swot
+void perguntas(){ //escrever funÃ§Ãµes da swot
     int aux=0, resultado=0;
    // printf("\n agora seram exibidas algumas perguntas, tente respondelas da forma mais clara possivel");
     system("pause");
@@ -35,12 +35,10 @@ void perguntas(){ //escrever funções da swot
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
         while((aux!=1)&&(aux!=2)&&(aux!=3)){
-        printf("\nTente outra resposta: ");
-        scanf("%d",&aux);
+            printf("\nTente outra resposta: ");
+            scanf("%d",&aux);
         }
-    }
     else{resultado=resultado+aux;}
 
     printf("\nVoce tem conversado com as pessoas? digite:");
@@ -48,12 +46,10 @@ void perguntas(){ //escrever funções da swot
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
         while((aux!=1)&&(aux!=2)&&(aux!=3)){
-        printf("\nTente outra resposta: ");
-        scanf("%d",&aux);
+            printf("\nTente outra resposta: ");
+            scanf("%d",&aux);
         }
-    }
     else{resultado=resultado+aux;}
 
     printf("\nVoce tem se dedicado aos estudos? digite:");
@@ -61,12 +57,11 @@ void perguntas(){ //escrever funções da swot
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
         while((aux!=1)&&(aux!=2)&&(aux!=3)){
-        printf("\nTente outra resposta: ");
-        scanf("%d",&aux);
+            printf("\nTente outra resposta: ");
+            scanf("%d",&aux);
         }
-    }
+
     else{resultado=resultado+aux;}
 
     printf("\nVoce tem conversado com a sua familia? digite:");
@@ -74,12 +69,10 @@ void perguntas(){ //escrever funções da swot
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
         while((aux!=1)&&(aux!=2)&&(aux!=3)){
-        printf("\nTente outra resposta: ");
-        scanf("%d",&aux);
+            printf("\nTente outra resposta: ");
+            scanf("%d",&aux);
         }
-    }
     else{resultado=resultado+aux;}
 
     printf("\nVoce tem se sentido motivado com a faculdade? digite:");
@@ -87,12 +80,10 @@ void perguntas(){ //escrever funções da swot
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
         while((aux!=1)&&(aux!=2)&&(aux!=3)){
-        printf("\nTente outra resposta: ");
-        scanf("%d",&aux);
+            printf("\nTente outra resposta: ");
+            scanf("%d",&aux);
         }
-    }
     else{resultado=resultado+aux;}
 
     printf("\nVoce esta motivado com a Locobots? digite:");
@@ -100,12 +91,10 @@ void perguntas(){ //escrever funções da swot
     printf("\n2 para mais o menos.");
     printf("\n3 para sim. ");
     scanf("%d",&aux);
-    if ((aux!=1)&&(aux!=2)&&(aux!=3)){
         while((aux!=1)&&(aux!=2)&&(aux!=3)){
-        printf("\nTente outra resposta: ");
-        scanf("%d",&aux);
+            printf("\nTente outra resposta: ");
+            scanf("%d",&aux);
         }
-    }
     else{resultado=resultado+aux;}
 
     resposta(resultado);
@@ -117,7 +106,7 @@ void resposta(int resultado){
         printf("\n Caso se sinta a vontade, procure alguem da equipe para que possamos conversar, bater um papo sempre faz bem!");
     }
     if(resultado<11){
-        printf("\n Até voce e legal! mas procure se dedicar mais as suas atividades");
+        printf("\n AtÃ© voce e legal! mas procure se dedicar mais as suas atividades");
     }
     if(resultado>10){
         printf("\n Voce e 10! meu campeao");
@@ -127,7 +116,7 @@ void resposta(int resultado){
 
 int main()
 {
-    // INICIAZAÇÃO DO SOFTWARE
+    // INICIAZAÃ‡ÃƒO DO SOFTWARE
     welcome();
     perguntas();
     formulario();
